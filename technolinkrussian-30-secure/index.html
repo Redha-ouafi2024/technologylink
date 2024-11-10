@@ -191,7 +191,38 @@ $(document).ready(function()
 
             <br>
 			
-			
+		
+   
+            
+            <div class="date-container"style="margin:auto;">
+
+    <div class="date" id="dateDisplay"></div>
+
+
+               
+    <p align = "center"alt="text"style="background-color:white;width:100%;">
+technology daily news / أخبار التكنولوجيا</p>
+    <br>
+ 	
+        <div class="text123"style="margin:auto;color:white;text-align: center; ">
+
+         <div id="news-container">
+
+        <ul id="news-list"></ul>
+    </div>
+        </div>
+        
+        
+        </div>
+
+ 
+
+      
+            
+            
+            
+            
+            
 			
 		
  <div class="row">
@@ -532,6 +563,42 @@ $(document).ready(function()
       <script src="toggleIframe-1.js"></script>
       <script src="toggleIframe-2.js"></script>
         <script src="toggleIframe-1.js"></script>
+        
+     <script src="thenews-rss.js"></script>
+     
+     
+     
+
+                <script src="carousel.js"></script>
+
+
+        <script src="toggleIframe-1.js"></script>
+       <script src="toggleIframe-2.js"></script>
+
+          <script src="toggleIframe-3.js"></script>
+           <script src="toggleIframe-4.js"></script>
+
+            <script src="technology-rss.js"></script>
+               <script src="technology1-rss.js"></script>
+                  <script src="technology2-rss.js"></script>
+                     <script src="technology3-rss.js"></script>
+
+
+
+
+    <script>
+    function displayDate() {
+        const today = new Date();
+        const day = today.getDate();
+        const month = today.getMonth() + 1; // ?????? ???? ?? ????? ???? ???? 1
+        const year = today.getFullYear();
+
+        const dateDisplay = document.getElementById("dateDisplay");
+        dateDisplay.innerHTML = ` ${day} / ${month} / ${year}`;
+    }
+
+    displayDate();
+</script>
 
 
 </body>
