@@ -141,38 +141,6 @@ animation: gradient 3s linear infinite; }
 
 
 
-
-      .logo {
-            font-size: 25px;
-            font-family: 'Sriracha', cursive;
-            color: #000;
-            text-decoration: none;
-        }
-        .nav-items a {
-            text-decoration: none;
-            color: #000;
-            padding: 10px 20px;
-        }
-        /* Styles for main content */
-        .intro {
-            /* Add your background image here */
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("your-image-url.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            /* Other styles for intro section */
-        }
-
-                .footerm {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #302f49;
-            padding: 10px;
-            color: #fff;
-        }
-
-
            .buttonm-group {
 
  display: flex;
@@ -244,6 +212,10 @@ animation: gradient 3s linear infinite; }
         }
 
 
+.carousel:hover {
+    animation-play-state: paused; /* إيقاف الحركة عند التمرير */
+}
+
 
 
                      .text:hover {
@@ -284,10 +256,10 @@ border: 1px solid ; color: black;
 
 
     0% {
-        transform: translateX(0%);
+        transform: translateX(-100%);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(100%);
     }
 }
 
